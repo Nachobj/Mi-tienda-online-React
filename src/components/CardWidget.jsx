@@ -1,12 +1,13 @@
 import React from 'react';
+import { FaHamburger } from 'react-icons/fa';
 
 const CardWidget = () => {
   return (
     <>
-        <span className ="material-symbols-outlined">
-            shopping_bag
-        </span>
-        <p>{7}</p>
+        <div>
+          <FaHamburger size={30}/>
+          <p>{7}</p>
+        </div>
     </>
   );
 };

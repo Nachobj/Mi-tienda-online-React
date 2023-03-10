@@ -6,7 +6,9 @@
 }
 
 body {
-  background-color: orange
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 50px 50px;
 }
 
 .logo {
@@ -45,6 +47,10 @@ body {
   color: #888;
 }
 
-.nav {
-  display: inline-block;
+.Menu {
+  display: flex;
+}
+
+.text-white {
+  color: white;
 }

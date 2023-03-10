@@ -1,20 +1,27 @@
-// import React from 'react';
-import CardWidget from './CardWidget';
+import React from "react";
+import {FaHamburger} from 'react-icons/fa'
+import CardWidget from "./CardWidget";
+
 
 const NavBar = () => {
   return (
-    <div className = "Menu">
-        Tienda Online
-        <CardWidget />
-        <ul>
-            <li className= "nav">
-                <a href="">Catalogo 1</a>
-                <a href="">Catalogo 2</a>
-                <a href="">Catalogo 3</a>
-            </li>
+    <>
+      <div className='navContainer'>
+        <h1>
+          Fábrica de <span>Hamburguesas</span>
+        </h1>
+        <ul className='navBar'>
+          <li className='btnNav'> INICIO</li>
+          <li className='btnNav'>COMBOS</li>
+          <li className='btnNav'>NOSOTROS</li>
+          <li className='btnNav'>CONTACTO</li>
         </ul>
-    </div>
-  );
-};
+        <button className="carrito">
+          <CardWidget />
+        </button>
+      </div>
+    </>
+  )
+}
 
-export default NavBar;
+export default NavBar

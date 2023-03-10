@@ -1,17 +1,18 @@
 import React from 'react';
-// import reactLogo from './assets/react.svg'
-import './App.css'
-import NavBar from './components/NavBar';
-import { ChakraProvider } from '@chakra-ui/react';
+import CardWidget from './components/CardWidget';
+import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
 
 const App = () => {
+
   return (
     <div>
-      <NavBar />
-      <ItemListContainer saludo = {"Bienvenidos"}/>
+      <Navbar />
+      <ItemListContainer />
+      <ItemCount/>
     </div>
   );
-};
+}
 
 export default App;
